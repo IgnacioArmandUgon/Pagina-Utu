@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(bgimg.gif);
+    background-size: cover;
+}
+
+li {
+    text-decoration: none;
+    display: inline;
+    height: 100%;
+}
+
+#Logo {
+    padding: 100% 2em;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 2em;
+    color: black;
+    border-radius: 5px;
+    transition: all 3 ease 0s;
+}
+
+@media (max-width: 580px) {
+    header a {
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: bolder;
+        color: black;
+        padding: 0 .5em;
+        border-radius: 5px;
+        transition: all 0.6s ease 0s;
+    }
+    #Logo {
+        padding: 100% 1em;
+    }
+    footer {
+        display: none;
+    }
+    section .materia {
+        width: 90%;
+    }
+}
+
+header a:hover {
+    background-color: rgba(119, 203, 231, 0.24);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(90deg, rgb(88, 146, 165), rgba(173, 216, 230, 0.719), rgb(88, 146, 165));
+    align-items: center;
+    height: 4em;
+    width: 100vw;
+    overflow-y: hidden;
+}
+
+section {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(173, 216, 230, 0.9));
+    height: auto;
+    width: 100vw;
+}
+
+.top {
+    margin-top: 6em;
+}
+
+section .normal {
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3em;
+    padding: 2em;
+    border-radius: 5px;
+    border: rgb(120, 128, 127) 2px solid;
+    height: auto;
+    background-color: white;
+}
+
+section .materia {
+    width: 70%;
+    min-height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3em;
+    padding: 2em;
+    border-radius: 5px;
+    border: rgb(120, 128, 127) 2px solid;
+    background-color: white;
+}
+
+section article h3,
+section article h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#horarios {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section article div a {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    color: black;
+    padding: 1.5em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+div a:hover {
+    background: linear-gradient(90deg, rgba(173, 216, 230, 0.501), lightblue);
+}
+
+#up {
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 99;
+    right: 5px;
+}
+
+.descargar {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(83, 83, 250, 0.576);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+.materia h3 {
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Special Elite', cursive;
+}
+
+.materia p {
+    display: inline;
+}
+
+embed {
+    width: 100%;
+    height: 100%;
+}
+
+.embed {
+    height: 660px;
+    overflow: hidden;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 13px;
+}
