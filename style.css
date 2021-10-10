@@ -84,8 +84,8 @@ section {
 
 section .normal {
     width: 70%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 3em;
     padding: 2em;
     border-radius: 5px;
@@ -97,8 +97,8 @@ section .normal {
 section .materia {
     width: 70%;
     min-height: 100vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 3em;
     padding: 2em;
     border-radius: 5px;
@@ -187,4 +187,10 @@ footer {
     position: fixed;
     bottom: 0;
     font-size: 13px;
+}
+
+.linklindo {
+    color: rgb(39, 108, 131);
+    font-weight: bold;
+    text-decoration: none;
 }
