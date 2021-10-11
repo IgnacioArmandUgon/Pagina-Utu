@@ -6,9 +6,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
+*::selection {
+    background-color: aquamarine;
+}
+
 body {
     background-image: url(bgimg.gif);
     background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(90deg, rgb(88, 146, 165), rgba(173, 216, 230, 0.719), rgb(88, 146, 165));
+    align-items: center;
+    height: 4em;
+    width: 100vw;
+    overflow-y: hidden;
 }
 
 li {
@@ -34,42 +50,8 @@ header a {
     transition: all 3 ease 0s;
 }
 
-@media (max-width: 580px) {
-    header a {
-        text-decoration: none;
-        font-family: monospace;
-        font-size: 18px;
-        font-weight: bolder;
-        color: black;
-        padding: 0 .5em;
-        border-radius: 5px;
-        transition: all 0.6s ease 0s;
-    }
-    #Logo {
-        padding: 100% 1em;
-    }
-    footer {
-        display: none;
-    }
-    section .materia {
-        width: 90%;
-    }
-}
-
 header a:hover {
     background-color: rgba(119, 203, 231, 0.24);
-}
-
-header {
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    background-image: linear-gradient(90deg, rgb(88, 146, 165), rgba(173, 216, 230, 0.719), rgb(88, 146, 165));
-    align-items: center;
-    height: 4em;
-    width: 100vw;
-    overflow-y: hidden;
 }
 
 section {
@@ -194,3 +176,34 @@ footer {
     font-weight: bold;
     text-decoration: none;
 }
+
+
+/*---En Celulares --*/
+
+@media (max-width: 500px) {
+    header a {
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: bolder;
+        color: black;
+        padding: 0 .5em;
+        border-radius: 5px;
+        transition: all 0.6s ease 0s;
+    }
+    #Logo {
+        padding: 100% 1em;
+    }
+    footer {
+        display: none;
+    }
+    section .normal,
+    section .materia {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/*---------------------*/
