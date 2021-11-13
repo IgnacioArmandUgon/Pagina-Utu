@@ -60,6 +60,17 @@ section {
     width: 100vw;
 }
 
+section h1 {
+    text-align: left;
+    font-size: 50px;
+}
+
+.header {
+    background-color: rgba(127, 255, 212, 0.5);
+    width: auto;
+    padding: 1em;
+}
+
 .top {
     margin-top: 6em;
 }
@@ -177,6 +188,14 @@ footer {
     text-decoration: none;
 }
 
+form input {
+    padding: 10px;
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 /*---En Celulares --*/
 
@@ -202,6 +221,13 @@ footer {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+    }
+    form input {
+        padding: 10px;
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
